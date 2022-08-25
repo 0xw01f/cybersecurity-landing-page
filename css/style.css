@@ -42,17 +42,7 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
 }
 
-.pageTitle h1 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 10em;
-}
-.pageTitle h2 {
-    margin: 0;
-    margin-top: -0.5em;
-    font-weight: 700;
-    font-size: 3.5em;
-}
+
 
 
 .pageSeparator {
@@ -74,7 +64,6 @@ h1, h2, h3, h4, h5, h6{
     text-align: center;
     font-size: 1.2em;
     font-weight: 300;
-    max-width: 40vw;
     
 }
 
@@ -178,3 +167,78 @@ h1, h2, h3, h4, h5, h6{
   .container > div {
     flex: 1; /*grow*/
   }
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+
+    .pageLeft, .pageRight {
+        display: none;
+    }
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    
+
+    .pageTitle h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 5em;
+    }
+    .pageTitle h2 {
+        margin: 0;
+        margin-top: -0.5em;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    
+
+    .pageLeft, .pageRight {
+        display: none;
+    }
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+
+
+    .pageLeft, .pageRight {
+        display: none;
+    }
+
+    .pageTitle h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 7em;
+    }
+    .pageTitle h2 {
+        margin: 0;
+        margin-top: -0.5em;
+        font-weight: 700;
+        font-size: 2.5em;
+    }
+
+    
+ }
+
+/* Large desktop */
+@media (min-width: 1000px) {
+    .pageTitle h1 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 10em;
+    }
+    .pageTitle h2 {
+        margin: 0;
+        margin-top: -0.5em;
+        font-weight: 700;
+        font-size: 3.5em;
+    }
+
+    
+ }
+
+ 
